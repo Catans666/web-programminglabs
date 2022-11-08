@@ -19,13 +19,16 @@ body {
      }  
      .footer {
         background-color: #333;
-        font-size:14px;
         color: #888;
         font-style: italic;
         text-align: right;
+        font-size: 14px 30px;
         line-height: 30px;
         padding-right: 20px;
-        height: 30px;
+        position: fixed; 
+        bottom: 0px; 
+        right: 0px;
+        left: 0px;  
      }
      .a {
         background-color: #66cf1f;
@@ -63,13 +66,25 @@ body {
         line-height: 100px;
         margin: auto;
         position: relative;
-            }
+    }
     .e:hover {
-        background-color: rgb(247, 90, 0);
-        color: rgb(51, 172, 98);
-        border: 2px solid rgb(207, 24, 33);
-        z-index: 1;
-            }   
+            background-color: rgb(247, 90, 0);
+            color: rgb(51, 172, 98);
+            border: 2px solid rgb(207, 24, 33);
+            z-index: 1;
+    }   
+    .menu {
+            height: 15px;
+            overflow: hidden;
+    }
+    .menu:hover {
+            height: 100px;     
+    }
+    .spisok:hover {
+                background-color: #888;
+                width: 200px;
+                padding: 0%;
+    }
 </style> 
 </head> 
 <body>
