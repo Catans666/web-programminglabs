@@ -15,8 +15,11 @@
     }
 
     .blue {
+        color: white;
         background: rgb(20, 49, 179);
-        height: 100px;
+        height: 80px;
+        font-size: 40px;
+        padding-left: 1900px;
         }
 
     .content {
