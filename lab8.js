@@ -24,3 +24,29 @@ function showTime() {
 
 window.addEventListener('load', showTime);
 setInterval(showTime, 1000); 
+
+
+function ShowDate(params) {
+    let out = document.getElementById('today'); 
+    let today = new Date ();
+    out.innerHTML = today.toLocaleDateString ();
+    }
+
+
+function Showdays(params) {
+     let out = document.getElementById('segonnya'); 
+     let segonnya = new Date ();
+    out.innerHTML = segonnya.toLocaleDateString ();
+    }
+
+function showDayssCoun(parasm) {
+        let segonnya = new Date();
+        let inputDate = document.querySelector('input[type=number]');
+        let kolichestvodney = new Date (inputDate.value);
+        let daysCount = (segonnya + kolichestvodney)    ;
+        let result1 = document.getElementById('result1');
+        daysCount = Math.floor(daysCount); // округляем в меньшую сторону
+        result1.innerHTML = 'Круглая дата будет через: ' + daysCount;   
+    }
+
+    window.addEventListener('load', ShowDate);
