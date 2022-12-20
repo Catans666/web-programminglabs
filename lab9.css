@@ -2,27 +2,25 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fffff0;
-    }
-    .header {
+}
+.header {
     color: white;
     background: Black;
     font-size: 20px;
     height: 80px;
     line-height: 80px;
     padding-left: 30px;
-    }
-    
-    .step {
-        width: 200px;
-        height: 100px;
-        border: 1px solid;
-        position: absolute;
-        top: 300px;
-        left: 30px;
-        text-align: center;
-        }
-    
-    .footer {
+}   
+
+#coords {
+    color: rgb(230, 238, 230);
+    background: rgb(4, 10, 121);
+    height: 80px;
+    line-height: 80px; 
+    text-align: center;
+}
+
+.footer {
     color: #888;
     font-size: 14px;
     font-style: italic;
@@ -35,4 +33,4 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    }
+}
