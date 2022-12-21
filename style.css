@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: SansSerif;
+    background: url('img/back.png');;
+    height: 100%;
+    overflow-x:  hidden;
+}
+
+header{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 24pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(52, 58, 64, 0.65);
+    border-radius: 20px;
+    background: white;
+}
+
+.settings_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.view_settings{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #292A2D;
+    color: white;
+    border-radius: 10px;
+    min-height: 50px;
+    width: 500px;
+}
+
+.arrow{
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page .text{
+    margin-top: 20px;
+}
+
+.page_content img{
+    max-height: 340px;
+    max-width: 60%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.setting{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.setting input[type=number]{
+    padding: 4px;
+    border-radius: 10px;
+    max-width: 40px;
+}
+
+.page_animation {
+    animation: ani 1200ms;
+}
+
+.page_animation2 {
+    animation: ani2 1200ms;
+}
+
+@keyframes ani {
+    0% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+}
+
+@keyframes ani2 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(300%);}
+}
+
+.page_content img{
+    margin-top: 20px;
+}
+
+.page_content{
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    background: white;
+    font-size: 14pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(52, 58, 64, 0.65);
+    display: none;
+}

@@ -1,79 +1,262 @@
-<!doctype html>
-<html>
-    <head>
-<meta charset="utf-8">
-<title>Копылов Кирилл. ФБИ-02. Лаба 2</title>
+<!DOCTYPE html>
+<html lang="книга сказок">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>        Про Ёжика и Кролика: Кусочек зимы — Стюарт П. и Риддел К.
+    </title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="shapka">
-  <h1>Студент: Копылов Кирилл Богданович</h1>
- </div>
-</body>
-<body>
-        <h2>Одуванчик</h2>
-    <h3>Рост и развитие одуванчика
+<body onload="showFirst()">
+<main>
+    <header>
+        Про Ёжика и Кролика: Кусочек зимы — Стюарт П. и Риддел К.
+    </header>
 
-    </h3>
-       <b>Одуванчик</b> - <i>это травянистое многолетнее растение</i> <u>которое достигает в высоту до 50 см.</u> Он формирует стержневой толстый корень с диаметром в 2 м и длиной до 60 см. <b>Листья одуванчика собраны в прикорневую розетку, слегка приподняты или прижаты к земле. Они бывают выемчато-перисторазделенные, ланцетовидные, сужены к основанию в крылатый черешок или с обращенными долями вниз. Стебли, листья и корни содержат очень горький и белый млечный сок.</b>
+    <div class="settings_container">
+        <div class="view_settings">
+            <div class="column setting">
+                <p>Размер текста</p>
+                <input id="text_size_input" type="number" min="8" max="32" value="14" onchange="changeTextSize()">
+            </div>
+            <div class="column setting">
+                <p>Цвет текста</p>
+                <input id="text_color_input" type="color" value="#000000" onchange="changeTextColor()">
+            </div>
+            <div class="column setting">
+                <p>Цвет фона</p>
+                <input id="back_color_input" type="color" value="#ffffff" onchange="changeBackColor()">
+            </div>
+            <div class="column setting">
+                <p>Страница</p>
+                <input id="page_num_input" type="number" min="1" max="31" value="1" size="1" onchange="toPage()">
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+        <div class="page_content page_animation">
+            <img id="page_img" src="img/image1.jpeg"/>
+            <div class="text">
+                <p>Приближалась зима. Ёжик готовился к зимней спячке.<br>— Я буду по тебе скучать, — сказал
+                    Кролик. — А ты?<br>— Нет, — ответил Ёжик.<br>— А я буду, — повторил
+                    Кролик.<br>— Ты это только что уже говорил, — пробурчал Ёжик.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image2.jpeg"/>
+            <div class="text">
+                <p>— А почему? — спросил Кролик обиженно.<br>— До чего же ты забывчивый, —
+                    ответил
+                    Ёжик.<br>— Забывчивый? — переспросил Кролик.<br>— Ну да, — кивнул Ёжик.
+                    —
+                    Я же сказал, что не смогу по тебе скучать.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image3.jpeg"/>
+            <div class="text">
+                <p>— Не сможешь? — удивился Кролик.<br>— Зимой я буду спать, — объяснил Ёжик.
+                    — А во сне по друзьям не скучают.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image4.jpeg"/>
+            <div class="text">
+                <p>Ёжик подобрал острый камешек и направился к большому дереву.<br>— Кролик, — сказал он,
+                    — я хочу кое о чём тебя попросить.<br>Кролик кивнул и продолжил свой завтрак: он доел салат из
+                    травы, сочный лист одуванчика и приступил к сладкому клеверу.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image5.jpeg"/>
+            <div class="text">
+                <p>А Ёжик в это время царапал на коре дерева целое послание.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image6.jpeg"/>
+            <div class="text">
+                <p>— Это моя просьба, я написал, чтобы ты не забыл, — сказал Ёжик. — Пожалуйста,
+                    сбереги
+                    для меня кусочек зимы.<br>— Но зачем? — удивился Кролик.<br>— Мне очень хочется
+                    узнать, какая она, зима, — объяснил Ёжик.</p>
+                <p>— Зима белая, — сказал Кролик. — И холодная — со снегом и льдом.<br>—
+                    Но
+                    насколько холодная? — спросил Ёжик. — Мне вот, например, уже сейчас холодно. И
+                    спа-а-а-ать
+                    охота. — И Ёжик зевнул.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image7.jpeg"/>
+            <div class="text">
+                <p>Кролик хотел прибодрить друга. — Ой! — вскрикнул он, больно уколовшись об иголки.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image8.jpeg"/>
+            <div class="text">
+                <p>— Извини, Кролик, — сказал Ёжик, — мне бы надо срочно найти на зиму подходящее
+                    местечко. Пойду поищу.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image9.jpeg"/>
+            <div class="text">
+                <p>Я буду по тебе скучать, — вздохнул Кролик и чуть не заплакал.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image10.jpeg"/>
+            <div class="text">
+                <p>Зима выдалась суровая и снежная. Озеро полностью замёрзло. Но Кролику не было холодно в его норе,
+                    только
+                    очень хотелось есть.<br>— Вот в чём зимой беда, — сказал Кролик, выбираясь из норки.
+                    —
+                    Чем холоднее, тем больше хочется есть. — Он огляделся. — И тем труднее найти еду.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image11.jpeg"/>
+            <div class="text">
+                <p>Нигде не было видно одуванчиков. И розового клевера.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image12.jpeg"/>
+            <div class="text">
+                <p>Кролику пришлось довольствоваться промёрзшей бурой травой. И бурыми высохшими листьями.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image13.jpeg"/>
+            <div class="text">
+                <p>И бурой нежующейся корой.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image14.jpeg"/>
+            <div class="text">
+                <p>И бурым жёстким жёлудем.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image15.jpeg"/>
+            <div class="text">
+                <p>Кролик с удивлением посмотрел на дерево, где Ёжик оставил своё послание. Желудь, который он хотел
+                    съесть, выпал и покатился с пригорка.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image16.jpeg"/>
+            <div class="text">
+                <p>А чем дальше он катился, тем больше на него налипало снега. Пока он весь не превратился в маленький
+                    твёрдый комок.</p>
+                <p>Кролик снова перечитал послание Ёжика. — Вот досада, — произнёс он. — Тут совсем не
+                    видно — кусочек ЧЕГО? Подул пронизывающий холодный ветер. Кролик ещё раз пристально посмотрел
+                    на комок и сразу вспомнил.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image17.jpeg"/>
+            <div class="text">
+                <p>— Кусочек зимы! — радостно воскликнул он.<br>Кролик принялся катать комок по снегу.<br>Комок
+                    становился всё больше и больше, пока не превратился в снежный ком.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image18.jpeg"/>
+            <div class="text">
+                <p>Кролик обернул его бурыми листьями.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image19.jpeg"/>
+            <div class="text">
+                <p>— Листья не пропустят тепло и сохранят комок, — сказал он. — А я пока спрячу его
+                    под землёй в своей норке.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image20.jpeg"/>
+            <div class="text">
+                <p>И вот пришла весна. Засияло солнце, снег растаял, а лёд на озере снова стал водой.<br>Проснулся после
+                    зимней спячки и Ёжик.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image21.jpeg"/>
+            <div class="text">
+                <p>— Ёжик! — обрадовался другу Кролик.<br>— Кролик! — бросился к нему Ёжик.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image22.jpeg"/>
+            <div class="text">
+                <p>— Ой, Кролик, — сказал Ёжик. — Ты съел главное слово — ты съел ЗИМУ.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image23.jpeg"/>
+            <div class="text">
+                <p>Нет, — ответил Кролик. — Я съел кусочек коры, а зиму я сохранил. Она у меня в норе, сейчас
+                    принесу.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image24.jpeg"/>
+            <div class="text">
+                <p>Ёжик осторожно потрогал бурый шар.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image25.jpeg"/>
+            <div class="text">
+                <p>— А ты говорил, что зима белая, — заметил он.<br>И добавил:<br>— И холодная.<br>—
+                    Подожди чуть-чуть, — ответил Кролик.<br>И он стал снимать один лист за другим.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image26.jpeg"/>
+            <div class="text">
+                <p>Ёжик заворожённо уставился на снежный комок. Он и впрямь был похож на белую зиму.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image27.jpeg"/>
+            <div class="text">
+                <p>Ёжик осторожно понюхал его. Он и пахнул холодной зимой.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image28.jpeg"/>
+            <div class="text">
+                <p>Ёжик поднял комок, прижав к себе.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image29.jpeg"/>
+            <div class="text">
+                <p>— Ой!</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image30.jpeg"/>
+            <div class="text">
+                <p>— Вот такая она, зима, и есть, — сказал Кролик.</p>
+            </div>
+        </div>
+        <div class="page_content page_animation">
+            <img src="img/image31.jpeg"/>
+            <div class="text">
+                <p>— Спасибо, что не забыл о моей просьбе, — поблагодарил Ёжик.<br>— Я не забыл, потому
+                    что скучал по тебе, — ответил Кролик. — А ты скучал по мне?<br>Ёжик задумался.<br>— Не
+                    знаю, что тебе и сказать, Кролик, — только и произнёс он. — А сам ты как думаешь?</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="script.js"></script>
 </body>
-<body>
-    <p><img src="odyvanckik1.jpg" width="458" height="450" alt="Одуванчик 1"></p>
-    Одуванчик 1
-    <p><img src="odyvanckik2.jpg" width="458" height="450" alt="Одуванчик 2"></p>
-    Одуванчик 2
-    <p><img src="odyvanckik3.jpg" width="458" height="450" alt="Одуванчик 3"></p>
-Одуванчик 3
-</body>
-<body>
-    <h3> Среда обитания одуванчика</h3>
-    <font color="yellow">.Одуванчик является самым распространенным</font> <font color="green">растением.</font> Особенно он предпочитает лесостепные зоны. Растение произрастает в Украине, европейской части России, на Кавказе, в Белоруссии Сибири, Центральной Азии, на Дальнем Востоке, Камчатке и Сахалине. Оно культивируется в Японии, США, Индии, странах Западной Европы, где выведено много сортов.    
-</body>
-<body>
-    <h3> Продолжительность жизни одуванчика</h3>
-    <font color="purple">Одуванчик живет 2 года.</font>
-</body>
-<body>
-    <h3>Литература</h3>
-    <ol>
-        <li>Taraxacum // Ботанический словарь / сост. Н. И. Анненков. — СПб.: Тип. Имп. АН, 1878. — XXI + 645 с.</li>
-        <li>Ростовцев С. И. Одуванчик // Энциклопедический словарь Брокгауза и Ефрона : в 86 т. (82 т. и 4 доп.). — СПб., 1897. — Т. XXIa.</li>
-        <li>Одуванчик / О. В. Чернева // Николай Кузанский — Океан. — М. : Большая российская энциклопедия, 2013. — (Большая российская энциклопедия : [в 35 т.] / гл. ред. Ю. С. Осипов ; 2004—2017, т. 23). — ISBN 978-5-85270-360-6.</li>
-        <li>Kirschner J., Štěpánek J. A Nomenclatural Checklist of Supraspecific Names in Taraxacum // Taxon. — 1997. — Vol. 46. — P. 87—98. — doi:10.2307/1224294</li>
-        <li>Юрий Константинов Одуванчик, подорожник. Природные лекарства // Энциклопедический словарь.</li>
-       </ol>
-</body>
-<style type="text/css">
-    #content {
-     width: 700px; /* Ширина слоя */
-     margin: 0 auto 70px; /* Выравнивание по центру */
-    }
-    #footer {
-     position: fixed; /* Фиксированное положение */
-     left: 0; bottom: 0; /* Левый нижний угол */
-     padding: 10px; /* Поля вокруг текста */
-     background: #1e21b6; /* Цвет фона */
-     color: #fff; /* Цвет текста */
-     width: 100%; /* Ширина слоя */
-    }
-    #shapka {
-     padding: 10px; /* Поля вокруг текста */
-     background: #ceb212; /* Цвет фона */
-     color: #fff; /* Цвет текста */
-     width: 100%; /* Ширина слоя */ 
-    }
-   </style>
-  </head>
-  <body>
-      <div id="footer">
-    &copy; Факультет юизнеса, ФБИ-02, 3 Курс, 2022
-   </div>
-  </body>
-  <head>
-    <meta charset="utf-8">
-    <title>Цвет фона</title>
-    <style>
-     body {
-      background: rgb(189, 41, 41); /* Цвет фона */
-     }
-    </style>
 </html>
