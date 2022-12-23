@@ -36,3 +36,12 @@ bottom: 0;
 left: 0;
 right: 0;
 }
+
+.multiplication_table {
+    width: 1500px;
+    height: 10px;
+    font-size: 20px;
+    color: rgb(245, 4, 4);
+    position: absolute;
+    text-align: center;
+}
