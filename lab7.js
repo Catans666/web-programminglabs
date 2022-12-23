@@ -46,3 +46,11 @@ function makeStairs() {
         steps[i].innerHTML = 'Блок номер ' + i;
     }
 }
+
+function makeMT() {
+    let stepCount = 9;
+
+    for (let i = 0; i<stepCount; i++) {
+        document.write ((i+1) + ' * 22 = ' + ((i+1)*22) + "<br>");
+    }
+}  
