@@ -1,40 +1,21 @@
-    body {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fffff0;
-    }
+}
 
-
-    .header {
+.header {
     color: white;
-    background: rgb(224, 168, 13);
-    font-size: 20px;
+    background: rgba(204, 143, 11, 0.938);
+    font-size: 30px;
     height: 80px;
     line-height: 80px;
     padding-left: 30px;
-    }
+}
 
-    .blue {
-        color: white;
-        background: rgb(20, 49, 179);
-        height: 80px;
-        font-size: 40px;
-        padding-left: 1900px;
-        }
-
-    .content {
-        color: rgb(33, 192, 197);
-        font-size: 36px;
-        height: 100px;
-        line-height: 100px;
-        padding-left: 250px;
-        }
-
-
-    .footer {
-    color: #888;
-    font-size: 14px;
-    font-style: italic;
+.footer {
+    color:rgb(231, 152, 6);
+    font-size: 19px;
     background-color: #333;
     text-align: right;
     height: 30px;
@@ -44,6 +25,53 @@
     bottom: 0;
     left: 0;
     right: 0;
-    }
+}
 
- 
+.today {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(0, 172, 252);
+    padding-left: 50px;
+}
+
+.date {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(240, 116, 0);
+    padding-left: 70px;
+}
+
+#result {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(235, 4, 74);
+    padding-left: 75px;
+}
+
+#time {
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(30, 159, 210);
+    padding-right: 50px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.button {
+    padding-left: 600px;
+}
+
+.days {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(235, 5, 215);
+    padding-left: 85px;
+}
+#resdays {
+    padding-left: 95px;
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(3, 40, 247);
+}
