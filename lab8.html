@@ -9,35 +9,25 @@
     <body>
         <div class="header">
             Копылов Кирилл
-        </div>
-
-        <div class="blue">
             <div id="time">0:00:00</div>
         </div>
-
-
         <div class="content">
-            Сегодня            
-            <div id="today"></div>
-            <div>
-                Моя дата рождения:  <input type="date">
-            </div>
-            <div>
-                <button onclick="showDaysCount()">Рассчитать сколько времени прошло</button>
-            </div>
-            <div id="result"></div>
-
-            
-            <div id="segonnya"></div>
-            <div>
-                Количество дней:  <input type="number">
-            </div>
-            <div>
-                <button onclick="showDaysCount()">Рассчитать когда у человека будет круглая дата</button>
-            </div>
-            <div id="result1"></div>
+            <div class="today">Сегодня: <span id="today"></span></div>
+        <div class="date">
+            Моя дата рождения: <input type="date">
         </div>
-
+        <div class="button">
+            <button onclick="showDaysCount()">Рассчитать сколько дней прошло</button>
+        </div>
+        <div id="result"></div>
+            <div class="days">
+                Введите количество дней <input type="number">
+            </div>
+        <div>
+            <button onclick="showroundDate()">Рассчитать</button>
+        </div>
+        <div id="resdays"></div>
+    </div>
         <div class="footer">
             Факультет бизнеса, ФБИ-02, 3 курс, 2022
         </div>
