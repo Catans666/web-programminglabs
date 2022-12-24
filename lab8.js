@@ -34,4 +34,3 @@ function showroundDate() {
 
     resdays.innerHTML = 'Круглая дата будет:' + ' ' + roundDate;
 }
-jj
